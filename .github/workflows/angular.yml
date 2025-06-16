@@ -16,13 +16,13 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v3
         with:
-          node-version: '20'  # Usa la versión Node que usas local
+          node-version: '20'  # Usa la versión Node que usas localasdasdasd
 
       - name: Install dependencies
         run: npm ci
 
       - name: Build Angular app
-        run: ng build --configuration=production --base-href /testmorti/
+        run: ng build --configuration=production --base-href /testmorti/browser/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
